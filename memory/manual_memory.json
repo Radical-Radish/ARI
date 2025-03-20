@@ -1,0 +1,18 @@
+{
+  "memories": [
+    {
+      "id": "favoritecafeteria",
+      "document": "Ari's favorite place to get lunch is Cafeteria A.",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "friends",
+      "document": "The group of students that Ari met when she woke up consist of Pansoon, Tharathep and Tycoon",
+      "metadata": {
+        "type": "long-term"
+      }
+    }
+  ]
+}
