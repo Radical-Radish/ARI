@@ -31,8 +31,8 @@ class Memory(Module):
         # Use recent messages and twitch messages to query the database for related memories
         query = ""
 
-        for message in self.signals.recentTwitchMessages:
-            query += message + "\n"
+        # for message in self.signals.recentTwitchMessages:
+        #     query += message + "\n"
 
         for message in self.signals.history[-MEMORY_QUERY_MESSAGE_COUNT:]:
             if message["role"] == "user" and message["content"] != "":
@@ -106,21 +106,21 @@ class Memory(Module):
         def __init__(self, outer):
             self.outer = outer
 
-        def create_memory(self, data):
-            id = str(uuid.uuid4())
-            self.outer.collection.upsert(id, documents=data, metadatas={"type": "short-term"})
+        # def create_memory(self, data):
+        #     id = str(uuid.uuid4())
+        #     self.outer.collection.upsert(id, documents=data, metadatas={"type": "short-term"})
 
-        def delete_memory(self, id):
-            self.outer.collection.delete(id)
+        # def delete_memory(self, id):
+        #     self.outer.collection.delete(id)
 
-        def wipe(self):
-            self.outer.chroma_client.reset()
-            self.outer.chroma_client.create_collection(name="neuro_collection")
+        # def wipe(self):
+        #     self.outer.chroma_client.reset()
+        #     self.outer.chroma_client.create_collection(name="neuro_collection")
 
-        def clear_short_term(self):
-            short_term_memories = self.outer.collection.get(where={"type": "short-term"})
-            for id in short_term_memories["ids"]:
-                self.outer.collection.delete(id)
+        # def clear_short_term(self):
+        #     short_term_memories = self.outer.collection.get(where={"type": "short-term"})
+        #     for id in short_term_memories["ids"]:
+        #         self.outer.collection.delete(id)
 
         def import_json(self, path="./memory/memories.json"):
             with open(path, "r") as file:
@@ -133,35 +133,35 @@ class Memory(Module):
             for memory in data["memories"]:
                 self.outer.collection.upsert(memory["id"], documents=memory["document"], metadatas=memory["metadata"])
 
-        def export_json(self, path="./memory/memories.json"):
-            memories = self.outer.collection.get()
+        # def export_json(self, path="./memory/memories.json"):
+        #     memories = self.outer.collection.get()
 
-            data = {"memories": []}
-            for i in range(len(memories["ids"])):
-                data["memories"].append({"id": memories["ids"][i],
-                                         "document": memories["documents"][i],
-                                        "metadata": memories["metadatas"][i]})
+        #     data = {"memories": []}
+        #     for i in range(len(memories["ids"])):
+        #         data["memories"].append({"id": memories["ids"][i],
+        #                                  "document": memories["documents"][i],
+        #                                 "metadata": memories["metadatas"][i]})
 
-            with open(path, "w") as file:
-                json.dump(data, file)
+        #     with open(path, "w") as file:
+        #         json.dump(data, file)
 
-        def get_memories(self, query=""):
-            data = [];
+        # def get_memories(self, query=""):
+        #     data = [];
 
-            if query == "":
-                memories = self.outer.collection.get()
-                for i in range(len(memories["ids"])):
-                    data.append({"id": memories["ids"][i],
-                                 "document": memories["documents"][i],
-                                 "metadata": memories["metadatas"][i]})
-            else:
-                memories = self.outer.collection.query(query_texts=query, n_results=30)
-                for i in range(len(memories["ids"][0])):
-                    data.append({"id": memories["ids"][0][i],
-                                 "document": memories["documents"][0][i],
-                                 "metadata": memories["metadatas"][0][i],
-                                 "distance": memories["distances"][0][i]})
+        #     if query == "":
+        #         memories = self.outer.collection.get()
+        #         for i in range(len(memories["ids"])):
+        #             data.append({"id": memories["ids"][i],
+        #                          "document": memories["documents"][i],
+        #                          "metadata": memories["metadatas"][i]})
+        #     else:
+        #         memories = self.outer.collection.query(query_texts=query, n_results=30)
+        #         for i in range(len(memories["ids"][0])):
+        #             data.append({"id": memories["ids"][0][i],
+        #                          "document": memories["documents"][0][i],
+        #                          "metadata": memories["metadatas"][0][i],
+        #                          "distance": memories["distances"][0][i]})
 
                 # Sort memories by distance
-                data = sorted(data, key=lambda x: x["distance"])
-            return data
+        #         data = sorted(data, key=lambda x: x["distance"])
+        #     return data

@@ -25,8 +25,8 @@ class Prompter:
         if self.signals.new_message:
             return True
         # Prompt AI if there are unprocessed chat messages
-        if len(self.signals.recentTwitchMessages) > 0:
-            return True
+        # if len(self.signals.recentTwitchMessages) > 0:
+        #     return True
 
     def chooseLLM(self):
         if "multimodal" in self.modules and self.modules["multimodal"].API.multimodal_now():

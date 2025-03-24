@@ -15,7 +15,7 @@ class STT:
         if not self.enabled:
             return
 
-        print("STT OUTPUT: " + text)
+        print("YOU: " + text)
         self.signals.history.append({"role": "user", "content": text})
 
         self.signals.last_message_time = time.time()
@@ -66,12 +66,12 @@ class STT:
         def __init__(self, outer):
             self.outer = outer
 
-        def set_STT_status(self, status):
-            self.outer.enabled = status
-            self.outer.signals.sio_queue.put(('STT_status', status))
+        # def set_STT_status(self, status):
+        #     self.outer.enabled = status
+        #     self.outer.signals.sio_queue.put(('STT_status', status))
 
-        def get_STT_status(self):
-            return self.outer.enabled
+        # def get_STT_status(self):
+        #     return self.outer.enabled
 
         def shutdown(self):
             self.outer.recorder.stop()

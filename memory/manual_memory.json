@@ -1,15 +1,57 @@
 {
   "memories": [
     {
-      "id": "favoritecafeteria",
-      "document": "Ari's favorite place to get lunch is Cafeteria A.",
+      "id": "institute",
+      "document": "The Robotics and AI Engineering department(or RAI in short) is a department within the Faculty of engineering of King Mongkut's Institute of Technology, Ladkrabang(KMITL).",
       "metadata": {
         "type": "long-term"
       }
     },
     {
-      "id": "friends",
-      "document": "The group of students that Ari met when she woke up consist of Pansoon, Tharathep and Tycoon",
+      "id": "degree",
+      "document": "By graduating from this department, the student will obtain Bachelor of Engineering in Robotics and Artificial Intelligence Engineering degree",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "location",
+      "document": "Study in a classroom provided within King Mongkut's Institute of Technology. Each class will may be taught in different classroom in each academic year. Check REG KMITL website for further details",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "curriculum",
+      "document": "The B.Eng. in Robotics and AI program is a four-year full-time undergraduate program. In order to graduate, the students must complete at least 131 credits. Students must achieve the required English proficiency level prior to the graduation and satisfy the graduation requirements. The program is designed to drive innovations and entrepreneurship in robotics and AI technology-related areas. Each semester will include a project- based theme which helps students practice and design innovative solutions in the respective areas. In the first year, the students study basic courses in mathematics and science and improve their communication skills. Students will also be introduced to fundamental programming concepts and the foundation of robotics systems. The first-year projects will give students hands-on experience, introduction and basic development of robotics technologies. In the second year, the students will learn advanced robotics concepts which serve as the foundation of robotics technologies. The students also learn to apply design methods for solutions in technical areas such as control systems design and kinematics and dynamics. Third-year students will learn about the latest technologies and AI which happen in the area. In each semester, the students will study new concepts and apply creativity in completing projects in trending areas such as machine perception application development, cognition and reasoning and IoT. Students will also learn about AI engineering, along with the process and tools to facilitate new innovations. Fourth-year students undertake significant RAI engineering capstone design projects. Students will apply their skills and knowledge to create sustainable innovations, practice open-ended engineering design and/or research that incorporates fundamental and advanced concepts in Robotics and AI. Students will learn to build innovation, identify the opportunities, propose ideas, design and implement innovative solutions while being able to apply standards and realistic engineering constraints. Students also further specialize in their areas of interest and prepare for the next step in their careers.",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "collab",
+      "document": "The program is in collaboration with many universities according to the memorandum of understanding (MOU) such as College of Engineering, Carnegie Mellon University, the University of South Florida, Imperial College, Chubu University, Kumamoto University, BK Birla Institute of Engineering and Technology, National Formosa University and South Eastern Regional College, etc.",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "history",
+      "document": "The program has been endorsed by the academic comittee of KMITL on June 2020. Then, in August 2020, the program has been approved by the University council. The program started its first semester on academic year 2018",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "career",
+      "document": "Some possible career path for this program includes Robotic Engineer, Startup Entrepreneur, Software Engineer for Mechatronics and Machines, System Engineer, Machine Vision Engineer, Robotic security Analyst, Expert system analyst, Machine designer, software architect for AI, solution engineer, etc.",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "instructor",
+      "document": "The instructor available for this program include Dr.Poom Konghuayrob, Dr.Kanoknuch Songsuwankit, Dr. Anakkapon Saenthon, Dr. Weon Keun Song and Dr. Jutarut Chaoraingern",
       "metadata": {
         "type": "long-term"
       }
