@@ -3,3 +3,4 @@ models/
 __pycache__/
 .env
 realtimesst.log
+voice_template/

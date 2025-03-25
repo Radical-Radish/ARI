@@ -51,7 +51,77 @@
     },
     {
       "id": "instructor",
-      "document": "The instructor available for this program include Dr.Poom Konghuayrob, Dr.Kanoknuch Songsuwankit, Dr. Anakkapon Saenthon, Dr. Weon Keun Song and Dr. Jutarut Chaoraingern",
+      "document": "According to the 2020 curriculum, there are 14 instructors (including executive program comittee) available for this program including Assoc. Prof. Dr. Somyot Kaitvanidvilai, Asst. Prof. Dr. Rutchanee Gullayanon, Assoc. Prof. Dr. Pitikhate Sooraksa, Assoc. Prof. Dr. Chutimet Srinilta, Asst. Prof. Dr. Panarat Cherntanomwong, Asst. Prof. Dr. Sutheera Puntheeranurak, Asst. Prof. Dr. Akkarit Sangpetch, Asst. Prof. Dr. Orathai Sangpetch, Asst. Prof. Dr. Ratthachai Chawuthai, Dr.Poom Konghuayrob, Dr.Kanoknuch Songsuwankit, Dr. Anakkapon Saenthon, Dr. Weon Keun Song and Dr. Jutarut Chaoraingern",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "rec11",
+      "document": "The recommended subject to enroll in the first year first semester include(format: name[id/code][credit]): Computer programming for RAI[01416316][3], Introduction to calculus[01006710][3], General physics 1[01006723][3], General physics laboratory 1[01006724][1], Engineering 3D drawing[01416309][3], Any General Education(GENED) elective subject[Depends][3], Academic listening and speaking[01416000][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "rec12",
+      "document": "The recommended subject to enroll in the first year second semester include(format: subject name[id/code][credit]): Introduction to robotics and AI[01416320][3], Engineering mechanics[01006803][3], Advanced calculus[01006711][3], General physics 2[01006725][3], General physics laboratory 2[01006726][1], Microprocessor and Interface[01416308][3], Robotics laboratory 1[01416514][1], Academic reading and writing[01416001][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "rec21",
+      "document": "The recommended subject to enroll in the second year first semester include(format: subject name[id/code][credit]): Electric circuit and electronics[01416312][3], Differential equation and matrix algebra[01416301][3], Robotics laboratory 2[01416505][1], Feedback control[01416304][3], Introduction to algorithms[01416521][3], Any GENED elective subject[Depends][3], Interpretation and Arguments[01416003][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "rec22",
+      "document": "The recommended subject to enroll in the second year second semester include(format: subject name[id/code][credit]): Probability and statistics 1[01006719][3], Strength of material[01416305][3], Kinematics and dynamics[01416308][3], Artificial Intelligence technology[01416305][3], Robotics laboratory 3[01416516][1], Computer vision[01416500][3], Any GENED elective subject[Depends][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "31",
+      "document": "The recommended subject to enroll in the third year first semester include(format: subject name[id/code][credit]): Mathematics of data science and data analytic[01416801][3], Safety and standardization in RAI[01416306][3], Manufacturing process[01416319][3], Discrete mathematics[01006718][3], Any RAI eletive mandatory subject[0141xxxx][3], Any RAI elective subject[0141xxxx][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "32",
+      "document": "The recommended subject to enroll in the third year second semester include(format: subject name[id/code][credit]): Any GENED elective subject[Depends][3], Industrial electronics[01416315][3], Any RAI elective subject[Depends][3], Any free elective subject[Depends][3], RAI engineering capstone design preparation[01416701][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "33",
+      "document": "The recommended subject to enroll in the third year summer include(format: subject name[id/code][credit]): Industrial Internship[01006805][0]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "41",
+      "document": "The recommended subject to enroll in the fourth year first semester include(format: subject name[id/code][credit]): Cooperative Education[01006301][6] or Study abroad[01006302][6]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "42",
+      "document": "The recommended subject to enroll in the fourth year first semester include(format: subject name[id/code][credit]): Any GENED elective subject[Depends][3], Any free elective subject[Depends][3], Any RAI elective subject[0141xxxx][3], Any RAI elective subject[0141xxxx][3], RAI engineering capstone design[01416702][3]",
+      "metadata": {
+        "type": "long-term"
+      }
+    },
+    {
+      "id": "friends",
+      "document": "The first friends Ari made after waking up is Tharathep, Pansoon and Tycoon.",
       "metadata": {
         "type": "long-term"
       }

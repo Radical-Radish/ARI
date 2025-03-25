@@ -16,33 +16,9 @@ PATIENCE = 3600
 # LLM_ENDPOINT = ""
 LLM_ENDPOINT = "http://127.0.0.1:5000"
 
-# Twitch chat messages above this length will be ignored
-# TWITCH_MAX_MESSAGE_LENGTH = 300
-
-# Twitch channel for bot to join
-#UNIQUE#
-# TWITCH_CHANNEL = "kmitlraicapstone2024"
-
 # Voice reference file for TTS
 #UNIQUE#
 VOICE_REFERENCE = "3.wav"
-
-# MULTIMODAL SPECIFIC SECTION: Not needed when not using multimodal capabilities
-
-# MULTIMODAL_ENDPOINT = ""
-
-# MULTIMODAL_MODEL = "openbmb/MiniCPM-Llama3-V-2_5-int4"
-
-# MULTIMODAL_CONTEXT_SIZE = 1000 #8192 # Trying out 1000 tokens to limit short term memory
-
-# This is the multimodal strategy (when to use multimodal/text only llm) that the program will start with.
-# Runtime changes will not be saved here.
-# Valid values are: "always", "never"
-# MULTIMODAL_STRATEGY = "never"
-
-# This is the monitor index that screenshots will be taken. THIS IS NOT THE MONITOR NUMBER IN DISPLAY SETTINGS
-# Monitor 0 is a "virtual" monitor contains all monitor screens.
-# PRIMARY_MONITOR = 0
 
 # LLM SPECIFIC SECTION: Below are constants that are specific to the LLM you are using
 
@@ -90,35 +66,3 @@ MEMORY_QUERY_MESSAGE_COUNT = 5
 
 # How many memories to recall and insert into context
 MEMORY_RECALL_COUNT = 5
-
-# VTUBE STUDIO SECTION: Configure & tune model & prop positions here.
-# The defaults are for the Hiyori model on a full 16 by 9 aspect ratio screen
-'''
-VTUBE_MODEL_POSITIONS = {
-    "chat": {
-        "x": 0.4,
-        "y": -1.4,
-        "size": -35,
-        "rotation": 0,
-    },
-    "screen": {
-        "x": 0.65,
-        "y": -1.6,
-        "size": -45,
-        "rotation": 0,
-    },
-    "react": {
-        "x": 0.7,
-        "y": -1.7,
-        "size": -48,
-        "rotation": 0,
-    },
-}
-
-VTUBE_MIC_POSITION = {
-    "x": 0.52,
-    "y": -0.52,
-    "size": 0.22,
-    "rotation": 0,
-}
-'''

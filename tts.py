@@ -49,15 +49,3 @@ class TTS:
     class API:
         def __init__(self, outer):
             self.outer = outer
-
-    #     def set_TTS_status(self, status):
-    #         self.outer.enabled = status
-    #         if not status:
-    #             self.outer.stop()
-    #         self.outer.signals.sio_queue.put(('TTS_status', status))
-
-    #     def get_TTS_status(self):
-    #         return self.outer.enabled
-
-    #     def abort_current(self):
-    #         self.outer.stop()

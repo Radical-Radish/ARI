@@ -91,15 +91,6 @@ class Signals:
     def stt_ready(self, value):
         self._stt_ready = value
 
-    # @property
-    # def recentTwitchMessages(self):
-    #     return self._recentTwitchMessages
-
-    # @recentTwitchMessages.setter
-    # def recentTwitchMessages(self, value):
-    #     self._recentTwitchMessages = value
-    #     self.sio_queue.put(('recent_twitch_messages', value))
-
     @property
     def history(self):
         return self._history

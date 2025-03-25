@@ -150,29 +150,3 @@ class AbstractLLMWrapper:
     class API:
         def __init__(self, outer):
             self.outer = outer
-
-        # def get_blacklist(self):
-        #     return self.outer.llmState.blacklist
-
-        # def set_blacklist(self, new_blacklist):
-        #     self.outer.llmState.blacklist = new_blacklist
-        #     with open('blacklist.txt', 'w') as file:
-        #         for word in new_blacklist:
-        #             file.write(word + "\n")
-
-        #     # Notify clients
-        #     self.outer.signals.sio_queue.put(('get_blacklist', new_blacklist))
-
-        # def set_LLM_status(self, status):
-        #     self.outer.llmState.enabled = status
-        #     if status:
-        #         self.outer.signals.AI_thinking = False
-        #     self.outer.signals.sio_queue.put(('LLM_status', status))
-
-        # def get_LLM_status(self):
-        #     return self.outer.llmState.enabled
-
-        # def cancel_next(self):
-        #     self.outer.llmState.next_cancelled = True
-        #     # For text-generation-webui: Immediately stop generation
-        #     requests.post(self.outer.LLM_ENDPOINT + "/v1/internal/stop-generation", headers={"Content-Type": "application/json"})

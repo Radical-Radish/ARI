@@ -66,13 +66,6 @@ class STT:
         def __init__(self, outer):
             self.outer = outer
 
-        # def set_STT_status(self, status):
-        #     self.outer.enabled = status
-        #     self.outer.signals.sio_queue.put(('STT_status', status))
-
-        # def get_STT_status(self):
-        #     return self.outer.enabled
-
         def shutdown(self):
             self.outer.recorder.stop()
             self.outer.recorder.interrupt_stop_event.set()

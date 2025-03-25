@@ -55,64 +55,6 @@ class SocketIOServer:
         async def enable_STT(sid):
             self.stt.API.set_STT_status(True)
 
-        # @sio.event
-        # async def disable_movement(sid):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.set_movement_status(False)
-
-        # @sio.event
-        # async def enable_movement(sid):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.set_movement_status(True)
-
-        # @sio.event
-        # async def disable_multimodal(sid):
-        #     if "multimodal" in self.modules:
-        #         self.modules["multimodal"].API.set_multimodal_status(False)
-
-        # @sio.event
-        # async def enable_multimodal(sid):
-        #     if "multimodal" in self.modules:
-        #         self.modules["multimodal"].API.set_multimodal_status(True)
-
-        # @sio.event
-        # async def get_hotkeys(sid):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.get_hotkeys()
-
-        # @sio.event
-        # async def send_hotkey(sid, hotkey):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.send_hotkey(hotkey)
-
-        # @sio.event
-        # async def trigger_prop(sid, prop_action):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.trigger_prop(prop_action)
-
-        # @sio.event
-        # async def move_model(sid, mode):
-        #     if "vtube_studio" in self.modules:
-        #         self.modules["vtube_studio"].API.move_model(mode)
-
-        # @sio.event
-        # async def disable_twitch(sid):
-        #     if "twitch" in self.modules:
-        #         self.modules["twitch"].API.set_twitch_status(False)
-
-        # @sio.event
-        # async def enable_twitch(sid):
-        #     if "twitch" in self.modules:
-        #         self.modules["twitch"].API.set_twitch_status(True)
-
-        # @sio.event
-        # async def cancel_next_message(sid):
-        #     self.llmWrapper.API.cancel_next()
-
-        # @sio.event
-        # async def abort_current_message(sid):
-        #     self.tts.API.abort_current()
-
         @sio.event
         async def fun_fact(sid):
             self.signals.history.append({"role": "user", "content": "Let's move on. Can we get a fun fact?"})
@@ -126,26 +68,6 @@ class SocketIOServer:
         @sio.event
         async def nuke_history(sid):
             self.signals.history = []
-
-        # @sio.event
-        # async def play_audio(sid, file_name):
-        #     if "audio_player" in self.modules:
-        #         self.modules["audio_player"].API.play_audio(file_name)
-
-        # @sio.event
-        # async def pause_audio(sid):
-        #     if "audio_player" in self.modules:
-        #         self.modules["audio_player"].API.pause_audio()
-
-        # @sio.event
-        # async def resume_audio(sid):
-        #     if "audio_player" in self.modules:
-        #         self.modules["audio_player"].API.resume_audio()
-
-        # @sio.event
-        # async def abort_audio(sid):
-        #     if "audio_player" in self.modules:
-        #         self.modules["audio_player"].API.stop_playing()
 
         @sio.event
         async def set_custom_prompt(sid, data):
@@ -196,18 +118,6 @@ class SocketIOServer:
             self.signals.recentTwitchMessages = self.signals.recentTwitchMessages
             await sio.emit("patience_update", {"crr_time": time.time() - self.signals.last_message_time, "total_time": PATIENCE})
             await sio.emit('get_blacklist', self.llmWrapper.API.get_blacklist())
-
-            # if "twitch" in self.modules:
-            #     await sio.emit('twitch_status', self.modules["twitch"].API.get_twitch_status())
-            # if "audio_player" in self.modules:
-            #     await sio.emit('audio_list', self.modules["audio_player"].API.get_audio_list())
-            # if "vtube_studio" in self.modules:
-            #     await sio.emit('movement_status', self.modules["vtube_studio"].API.get_movement_status())
-            #     self.modules["vtube_studio"].API.get_hotkeys()
-            # if "custom_prompt" in self.modules:
-            #     await sio.emit('get_custom_prompt', self.modules["custom_prompt"].API.get_prompt())
-            # if "multimodal" in self.modules:
-            #     await sio.emit('multimodal_status', self.modules["multimodal"].API.get_multimodal_status())
 
             # Collect the enabled status of the llm, tts, stt, and movement and send it to the client
             await sio.emit('LLM_status', self.llmWrapper.API.get_LLM_status())
